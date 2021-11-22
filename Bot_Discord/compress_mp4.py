@@ -41,9 +41,6 @@ def find_url(keywords):
     driver.get("https://www.youtube.com/results?search_query=" + keywords)
     driver.find_element(By.XPATH,
                         '/html/body/ytd-app/div/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]/div[1]/div/div[1]/div/h3/a/yt-formatted-string').click()
-    # wait = WebDriverWait(driver,10)
-    # wait.until(EC.element_to_be_clickable((By.XPATH,'/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div/div/div/ytd-player/div/div/div[1]/video')))
-    # driver.find_element(By.XPATH,'/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div/div/div/ytd-player/div/div/div[34]/div[2]/div[1]/span/button').click()
     url = driver.current_url
 
     driver.get("https://www.google.com/")
@@ -58,9 +55,6 @@ def find_name(url_or_keywords):
             name = yt.title.translate({ord(c): None for c in '?<>/\\*:|"'})
         else:
             name = yt.title
-        # driver.get(url_or_keywords)
-        # driver.find_element(By.XPATH,'/html/body/ytd-app/ytd-consent-bump-v2-lightbox/tp-yt-paper-dialog/div[2]/div[2]/div[5]/div[2]/ytd-button-renderer[2]/a/tp-yt-paper-button').click()
-        #
     else:
         driver.get("https://www.youtube.com/results?search_query=" + url_or_keywords)
         name = driver.find_element(By.XPATH,
@@ -97,6 +91,3 @@ def dirPl(pl_name):
         os.makedirs(pl_name)
     os.chdir(r'C:\Users\julie\Documents\YT_Extractor\Bot_Dicord/')
 
-if __name__ == "__main__":
-    init_browser()
-    print(find_name("love me like you do"))
