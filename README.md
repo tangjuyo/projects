@@ -4,7 +4,7 @@
 <b>Bot_Discord (Multi-Tasks bot discord) :</b>  
                             - Music bot ( download ytb and spotify music ) ``only for educational content``  
                             - Moderation bot (use to moderate a discord server)  
-                            - Rpg Game ( based on a few animes) ``in development``  
+                             
 
 <b>TangjuyoPassWord :</b> a password manager without using internet and using a 128 bit crypting algorithm ``Not Finish Yet``
 
