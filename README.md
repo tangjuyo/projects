@@ -6,7 +6,7 @@
                             - Moderation bot (use to moderate a discord server)  
                              
 
-<b>TangjuyoPassWord :</b> a password manager without using internet and using a 128 bit crypting algorithm ``Not Finish Yet``
+<b>TangjuyoPassWord :</b> a password manager without using internet and using a 128 bit crypting algorithm ``BackEnd code finish``
 
 <b>Projet SW :</b> an optimizer for the Game Summoners War ( optimizer of runes choices and team maker) ``Not Finish Yet``
 
